@@ -16,7 +16,7 @@ LoRa  & LoRaWAN Topology
 https://www.linkedin.com/in/ericlivesay
 
     Hardware: 
-        1. E32-915TDO Lora wireless module
+        1. Gowoops SX1276 LoRa Radio Wireless 915Mhz UART Serial Module
         2. Raspberry Pi Pico
 
     Project setup:

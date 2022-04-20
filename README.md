@@ -1,5 +1,4 @@
 # DFW Pythoneers Talk on LoRa & LoRaWAN
-<hr>
 
 ## *Project Architecture:*
 

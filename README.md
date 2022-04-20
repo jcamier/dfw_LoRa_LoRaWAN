@@ -33,4 +33,8 @@ https://www.linkedin.com/in/jacques-camier/
 
             https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/enabling-serial-console
 
+        Source code ideas:
+
+            https://www.waveshare.com/wiki/SX1262_915M_LoRa_HAT
+
         

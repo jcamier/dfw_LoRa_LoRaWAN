@@ -13,6 +13,7 @@ LoRa  & LoRaWAN Topology
 ## Eric Livesay
 
 *Data Engineer*
+https://www.linkedin.com/in/ericlivesay
 
     Hardware: 
         1. E32-915TDO Lora wireless module

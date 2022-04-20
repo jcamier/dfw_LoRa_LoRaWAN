@@ -2,6 +2,12 @@
 
 ## *Project Architecture:*
 
+LoRa  & LoRaWAN Topology
+![](./lorwan_topology.jpeg)
+
+    source: https://telemetry2u.com/Documentation/lorawan-iot-platform-technical-description
+
+
 ## Eric Livesay:
 
 

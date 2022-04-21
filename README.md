@@ -64,4 +64,17 @@ https://www.linkedin.com/in/jacques-camier/
 
             https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi/rfm9x-raspberry-pi-setup
 
+<hr>
+
+## General Resources:
+
+What is LoRa and LoRaWAN Fundamentals (60+ minutes):
+
+https://www.youtube.com/watch?v=ZsVhYiX4_6o
+
+What are Hexadecimals (i.e. 0xC0): 
+
+https://en.wikipedia.org/wiki/Hexadecimal
+
+
         

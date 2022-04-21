@@ -21,7 +21,7 @@ https://www.linkedin.com/in/ericlivesay
 
     Project setup:
 
-    The idea is to Setup Serial (UART) communications between two e32-915TDO lora modules. The example here is using Arduino,
+    The idea is to Setup Serial (UART) communications between two lora modules. The example here is using Arduino,
     I plan on using two Raspberry Pi Pico's:
     
     https://osoyoo.com/2018/07/26/osoyoo-lora-tutorial-how-to-use-the-uart-lora-module-with-arduino/

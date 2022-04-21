@@ -37,6 +37,8 @@ https://www.linkedin.com/in/jacques-camier/
 
     * https://www.amazon.com/gp/product/B07VS47RQZ/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 
+![](./SX1268_LoRa_HAT.jpeg)
+
     Project setup: 
 
         1. Enable Serial Console (UART) on Raspberry Pi

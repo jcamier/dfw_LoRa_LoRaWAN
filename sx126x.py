@@ -1,4 +1,10 @@
-# This file is used for LoRa and Raspberry pi4B related issues
+# This code came from https://www.waveshare.com/w/upload/9/9d/SX126X_LoRa_HAT_Demo.zip
+# I do not warranty this code but only provided it as a learning resource
+
+# To download on your raspberry pi
+# cd Documents
+# wget https://www.waveshare.com/w/upload/9/9d/SX126X_LoRa_HAT_Demo.zip
+# unzip SX126X_LoRa_HAT_Demo.zip
 
 import RPi.GPIO as GPIO
 import serial

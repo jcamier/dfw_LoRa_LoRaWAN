@@ -4,9 +4,9 @@
 
 LoRa  & LoRaWAN Topology
 
-![](./lorwan_topology.jpeg)
+![](./lorwan_topology.png)
 
-    source: https://telemetry2u.com/Documentation/lorawan-iot-platform-technical-description
+    source: https://www.techplayon.com/lora-technology-benefits-application/
 
 <hr>
 
@@ -44,9 +44,24 @@ https://www.linkedin.com/in/jacques-camier/
         1. Enable Serial Console (UART) on Raspberry Pi
 
             https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/enabling-serial-console
+            
+            you can run `check_serial.py` found in repo to confirm it is enabled
+            
+            or
 
-        Source code ideas:
+            dmesg | grep tty
+
+            (dmesg - print or control the kernel ring buffer)
+
+            The kernel ring buffer is a data structure that records messages related to the operation of the kernel.
+            A ring buffer is a special kind of buffer that is always a constant size, removing the oldest messages when
+            new messages are received.
+        
+
+        Resources for project:
 
             https://www.waveshare.com/wiki/SX1262_915M_LoRa_HAT
+
+            https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi/rfm9x-raspberry-pi-setup
 
         

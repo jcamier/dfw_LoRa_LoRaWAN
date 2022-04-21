@@ -1,5 +1,4 @@
 import serial
-import time
 
 ser = serial.Serial()
 ser.braudrate = 9600

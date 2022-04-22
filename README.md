@@ -1,5 +1,15 @@
 # DFW Pythoneers Talk on LoRa & LoRaWAN
 
+* LoRa technology is used as wide area network wireless technology. There are different frequency bands defined in
+US (902 to 928 MHz), EU (863 to 870 MHz) , China (779 to 787 MHz) and other regions to be used in LoRa wireless
+technology based network. It is low power, long range and low data rate based technology.
+
+
+* The transmission from end device to gateway is referred as "uplink." 
+    
+
+* Tansmission from gateway to end device is referred as "downlink"
+
 ## *Project Architecture:*
 
 LoRa  & LoRaWAN Topology

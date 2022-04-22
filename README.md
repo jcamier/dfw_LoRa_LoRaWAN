@@ -8,7 +8,7 @@ technology based network. It is low power, long range and low data rate based te
 * The transmission from end device to gateway is referred as "uplink." 
     
 
-* Tansmission from gateway to end device is referred as "downlink"
+* Transmission from gateway to end device is referred as "downlink"
 
 ## *Project Architecture:*
 

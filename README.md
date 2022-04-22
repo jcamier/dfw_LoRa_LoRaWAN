@@ -82,6 +82,12 @@ What is LoRa and LoRaWAN Fundamentals (60+ minutes):
 
 https://www.youtube.com/watch?v=ZsVhYiX4_6o
 
+The Things Network - collaborative IoT ecosystem
+
+https://www.thethingsnetwork.org/
+
+https://github.com/TheThingsNetwork
+
 What are Hexadecimals (i.e. 0xC0): 
 
 https://en.wikipedia.org/wiki/Hexadecimal

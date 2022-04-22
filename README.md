@@ -1,5 +1,12 @@
 # DFW Pythoneers Talk on LoRa & LoRaWAN
 
+## Technical Terms:
+
+* The **baud rate** is the rate at which information is transferred in a communication channel. It is commonly used
+  when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the
+  serial port is capable of transferring a maximum of *9600 bits per second*.
+
+## What is LoRa?
 * LoRa technology is used as wide area network wireless technology. There are different frequency bands defined in
 US (902 to 928 MHz), EU (863 to 870 MHz) , China (779 to 787 MHz) and other regions to be used in LoRa wireless
 technology based network. It is low power, long range and low data rate based technology.

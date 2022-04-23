@@ -9,10 +9,37 @@
 
 * **RPi** - shorthand for Raspberry Pi
 
+
+* Amplitude Modulation (AM)
+
+
+* Frequency Modulation (FM)
+
+https://www.youtube.com/watch?v=dxYY097QNs0
+
 ## What is LoRa?
-* LoRa technology is used as wide area network wireless technology. There are different frequency bands defined in
-US (902 to 928 MHz), EU (863 to 870 MHz) , China (779 to 787 MHz) and other regions to be used in LoRa wireless
-technology based network. It is low power, long range and low data rate based technology.
+* LoRa technology is used as wide area network wireless technology. There are different frequency bands:
+  
+    - US: (902 to 928 MHz)
+    - EU: (863 to 870 MHz)
+    - China: (779 to 787 MHz)
+    - India 3 channels: (865.0625 MHz, 865.4025 MHz, 865.9850 MHz)
+    - Australia: (915 to 928 MHz)
+    - Other Asian countries: (920 to 923 MHz or 923 to 925 MHz)
+  
+    Source: https://devopedia.org/lora
+
+
+* LoRa is based on Chirp Spread Spectrum (CSS) technology, where chirps (also known as symbols) are the carrier of data.
+  Source: https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/#:~:text=LoRa%20is%20based%20on%20Chirp,the%20speed%20of%20data%20transmission.
+  
+
+* Spreading Factors and Frequencies
+![](./lora_data_specs.png)
+  Source: Semtech Corporation 2020
+
+
+* It is low power, long range and low data rate based technology which makes it great for IoT!
 
   Transmission of as far as 15 km (9 mi) with clear line of sight or in urban areas is 2 to 3 km (~1+ mi) 
 
@@ -23,9 +50,7 @@ technology based network. It is low power, long range and low data rate based te
 * Transmission from gateway to end device is referred as "downlink"
 
 
-* Spreading Factors and Frequencies
-![](./lora_data_specs.png)
-  Source: Semtech Corporation 2020
+
 
 ## *Project Architecture:*
 

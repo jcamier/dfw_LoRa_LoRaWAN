@@ -2,20 +2,33 @@
 
 ## Technical Terms:
 
+* **RPi** - shorthand for Raspberry Pi
+
+
+* **Transceiver** - combination of a transmitter/receiver in a single device. Most
+  LoRa end nodes are transceivers i.e. able to both transmit and receive data
+
+
+* **Modulation** - how analog or digital information is encoded onto a carrier signal
+  * Analog:  
+    * Amplitude Modulation (AM)
+    * Frequency Modulation (FM)
+    * Phase Modulation (PM)
+  * Digital:
+    * Amplitude Shift Keying (ASK)
+    * Frequency Shift Keying (FSK)
+    * Phase Shift Keying (PSK)
+  Source: https://www.youtube.com/watch?v=lg0eZWZFKiE
+
+  
 * The **baud rate** is the rate at which information is transferred in a communication channel. It is commonly used
   when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the
   serial port is capable of transferring a maximum of *9600 bits per second*.
   
-
-* **RPi** - shorthand for Raspberry Pi
-
-
-* Amplitude Modulation (AM)
+  
 
 
-* Frequency Modulation (FM)
 
-https://www.youtube.com/watch?v=dxYY097QNs0
 
 ## What is LoRa?
 * LoRa technology is used as wide area network wireless technology. There are different frequency bands:

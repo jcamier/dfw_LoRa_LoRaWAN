@@ -6,7 +6,7 @@
 
 
 * **Transceiver** - combination of a transmitter/receiver in a single device. Most
-  LoRa end nodes are transceivers i.e. able to both transmit and receive data
+  LoRa end nodes and gateways are transceivers i.e. able to both transmit and receive data
 
 
 * **Modulation** - how analog or digital information is encoded onto a carrier signal
@@ -18,7 +18,13 @@
     * Amplitude Shift Keying (ASK)
     * Frequency Shift Keying (FSK)
     * Phase Shift Keying (PSK)
-  Source: https://www.youtube.com/watch?v=lg0eZWZFKiE
+      
+![](./digital_modulation.png)  
+
+Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
+
+
+  
 
   
 * The **baud rate** is the rate at which information is transferred in a communication channel. It is commonly used

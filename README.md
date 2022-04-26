@@ -23,10 +23,12 @@
 
 Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
 
-
-  
-
-  
+* SPI - Serial Peripheral Interface
+  * is a synchronous serial communication or protocol normally found on RPi for two devices to send and receive data
+  * I2C on the other hand share a single data wire
+  Source: https://learn.adafruit.com/circuitpython-basics-i2c-and-spi/spi-devices?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWIzVniDvAVgEOLEkvDarvc1BUPUY0CubcazydnU9LvjP4zbjciRJyhoCjtkQAvD_BwE
+    
+    
 * The **baud rate** is the rate at which information is transferred in a communication channel. It is commonly used
   when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the
   serial port is capable of transferring a maximum of *9600 bits per second*.

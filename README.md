@@ -24,9 +24,14 @@
   Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
 
 
+* **I2C** - Synchronous Multi-controller/Multi-target Serial Communication Bus
+  * The I2C protocol is used to establish communication between two or more IC's (Integrated Circuits)
+
+
 * **SPI** - Serial Peripheral Interface
   * is a synchronous serial communication or protocol normally found on RPi for two devices to send and receive data
   * I2C on the other hand share a single data wire
+  
   Source: https://learn.adafruit.com/circuitpython-basics-i2c-and-spi/spi-devices?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWIzVniDvAVgEOLEkvDarvc1BUPUY0CubcazydnU9LvjP4zbjciRJyhoCjtkQAvD_BwE
     
     
@@ -36,9 +41,7 @@
   
   
 
-
-
-
+  
 ## What is LoRa?
 * LoRa technology is used as wide area network wireless technology. There are different frequency bands:
   
@@ -113,30 +116,49 @@ https://www.linkedin.com/in/jacques-camier/
 
 ![](./SX1268_LoRa_HAT.jpeg)
 
-    Project setup: 
+Project setup: 
 
-        1. Enable Serial Console (UART) on Raspberry Pi
+1. Configure I2C
+  
 
-            https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/enabling-serial-console
-            
-            you can run `check_serial.py` found in repo to confirm it is enabled
-            
-            or
+    sudo apt-get install -y python-smbus
+    sudo apt-get install -y i2c-tools
 
-            dmesg | grep tty
+* sudo raspi-config
+    * Interfacing Options or Advanced (Older versions)
+    * then I2C and enable it
+  
 
-            (dmesg - print or control the kernel ring buffer)
+    sudo reboot
+    sudo ls /dev/i2c*
 
-            The kernel ring buffer is a data structure that records messages related to the operation of the kernel.
-            A ring buffer is a special kind of buffer that is always a constant size, removing the oldest messages when
-            new messages are received.
-        
 
-        Resources for project:
 
-            https://www.waveshare.com/wiki/SX1262_915M_LoRa_HAT
 
-            https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi/rfm9x-raspberry-pi-setup
+      
+
+2. Enable Serial Console (UART) on Raspberry Pi
+
+https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/enabling-serial-console
+
+you can run `check_serial.py` found in repo to confirm it is enabled
+
+or
+
+    dmesg | grep tty
+
+(dmesg - print or control the kernel ring buffer)
+
+The kernel ring buffer is a data structure that records messages related to the operation of the kernel.
+A ring buffer is a special kind of buffer that is always a constant size, removing the oldest messages when
+new messages are received.
+
+
+Resources for project:
+
+    https://www.waveshare.com/wiki/SX1262_915M_LoRa_HAT
+
+    https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi/rfm9x-raspberry-pi-setup
 
 <hr>
 

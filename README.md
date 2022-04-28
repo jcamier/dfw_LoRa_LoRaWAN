@@ -1,4 +1,11 @@
 # DFW Pythoneers Talk on LoRa & LoRaWAN
+![](./lora_logo.png)  
+
+GitHub LoRa repo:
+
+https://github.com/Lora-net
+
+
 
 ## Technical Terms:
 
@@ -20,6 +27,7 @@
     * Phase Shift Keying (PSK)
       
 ![](./digital_modulation.png)  
+
 
   Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
 
@@ -121,23 +129,44 @@ Project setup:
 1. Configure I2C
   
 
-    sudo apt-get install -y python-smbus
-    sudo apt-get install -y i2c-tools
+`sudo apt-get install -y python-smbus`
+
+`sudo apt-get install -y i2c-tools`
 
 * sudo raspi-config
     * Interfacing Options or Advanced (Older versions)
     * then I2C and enable it
   
 
-    sudo reboot
-    sudo ls /dev/i2c*
+`sudo reboot`
+
+`sudo ls /dev/i2c*`
 
 
+2. Configure SPI
 
 
-      
+* sudo raspi-config
+    * Interfacing Options or Advanced (Older versions)
+    * then SPI and enable it
+  
 
-2. Enable Serial Console (UART) on Raspberry Pi
+`sudo reboot`
+
+`ls -l /dev/spidev*`
+
+You should see two devices listed for each SPI bus
+
+Now run this command:
+
+`ls /dev/i2c* /dev/spi*`
+
+You should see a response like this:
+
+`/dev/i2c-1 /dev/spidev0.0 /dev/spidev0.1`
+
+
+3. Enable Serial Console (UART) on Raspberry Pi
 
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/enabling-serial-console
 

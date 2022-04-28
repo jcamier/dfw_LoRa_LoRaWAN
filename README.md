@@ -217,9 +217,9 @@ SPI ok!
 done!
 ```
 
-Next section...
+Next section...getting the Adafruit LoRa Radio Bonnet to work with RPi
 
-Source(https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi?view=all)
+Source: https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi?view=all
 
 `sudo pip3 install adafruit-circuitpython-ssd1306`
 
@@ -243,6 +243,10 @@ If the RFM9x/RFM69 is detected, the OLED will display Detected!!!
 * You can now press the buttons!!!
 :star_struck:
 
+`sudo nano radio_rfm9x.py`
+* copy over file radio_rfm9x.py from repo
+
+`python3 radio_rfm9x.py`
   
 
 ### LoRa part II

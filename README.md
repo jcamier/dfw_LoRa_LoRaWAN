@@ -130,6 +130,7 @@ Project setup:
   
 
     sudo reboot
+    sudo ls /dev/i2c*
 
 
 

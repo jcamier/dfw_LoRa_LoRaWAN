@@ -67,6 +67,9 @@ https://lora-alliance.org/about-lorawan/
 
 
 * LoRa is based on Chirp Spread Spectrum (CSS) technology, where chirps (also known as symbols) are the carrier of data.
+  The LoRa spread spectrum modulation technique is patented by [Semtech](https://www.semtech.com/)
+  
+
   Source: https://www.thethingsnetwork.org/docs/lorawan/spreading-factors/#:~:text=LoRa%20is%20based%20on%20Chirp,the%20speed%20of%20data%20transmission.
   
 
@@ -195,6 +198,7 @@ Source: https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing
 `sudo python3 raspi-blinka.py`
   * This will update your Raspberry OS to use Python3 as default
   * You really should as Python2 is now deprecated
+  :smirk:
 
 Yes to proceed, and yes to reboot
 

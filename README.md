@@ -1,10 +1,13 @@
 # DFW Pythoneers Talk on LoRa & LoRaWAN
-![](./lora_logo.png)  
+![](./lora_logo.png) 
 
 GitHub LoRa repo:
 
 https://github.com/Lora-net
 
+![](./lorawan_logo.png)  
+
+https://lora-alliance.org/about-lorawan/
 
 
 ## Technical Terms:
@@ -118,13 +121,15 @@ https://www.linkedin.com/in/ericlivesay
 *Full Stack Software Engineer, IoT Enthusiast*
 https://www.linkedin.com/in/jacques-camier/
 
-    Hardware: SX1262 LoRa HAT Covers 915MHz Frequency Band with Spread Spectrum Modulation
 
-    * https://www.amazon.com/gp/product/B07VS47RQZ/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+## Project setup: 
+### Adafruit LoRa Radio Bonnet for Raspberry Pi
 
-![](./SX1268_LoRa_HAT.jpeg)
+    Hardware: Adafruit LoRa Radio Bonnet with OLED - RFM95W @ 915MHz - RadioFruit
 
-Project setup: 
+    * https://www.adafruit.com/product/4074
+
+![](./adafruit_lora_rfm95w_bonnet.jpeg)
 
 1. Configure I2C
   
@@ -165,8 +170,86 @@ You should see a response like this:
 
 `/dev/i2c-1 /dev/spidev0.0 /dev/spidev0.1`
 
+3. Install CircuitPython on RPi (requires Python 3.7 or later)
 
-3. Enable Serial Console (UART) on Raspberry Pi
+Source: https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+   
+
+`sudo apt-get update`
+
+`sudo apt-get upgrade`
+
+`sudo apt-get install python3-pip`
+
+`sudo pip3 install --upgrade setuptools`
+  * setuptools is a package used by many other packages to handle their installation from source code. It is 
+    used extensively for non-pure-Python packages, which need some compilation/installation step before being usable
+    (like packages containing extensions written in C)
+
+`cd ~`
+
+`sudo pip3 install --upgrade adafruit-python-shell`
+
+`wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py`
+
+`sudo python3 raspi-blinka.py`
+  * This will update your Raspberry OS to use Python3 as default
+  * You really should as Python2 is now deprecated
+
+Yes to proceed, and yes to reboot
+
+`sudo nano blinkatest.py`
+  * copy over file blinkatest.py from repo
+
+`python3 blinkatest.py`
+
+You should see the following output if all things are working:
+
+```
+Hello blinka!
+Digital IO ok!
+I2C ok!
+SPI ok!
+done!
+```
+
+Next section...
+
+Source(https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi?view=all)
+
+`sudo pip3 install adafruit-circuitpython-ssd1306`
+
+`sudo pip3 install adafruit-circuitpython-framebuf`
+
+`sudo pip3 install adafruit-circuitpython-rfm9x`
+
+You'll also want to download the font file, font5x8.bin
+
+`wget https://github.com/adafruit/Adafruit_CircuitPython_framebuf/raw/main/examples/font5x8.bin`
+
+`sudo nano rfm9x_check.py`
+* copy over file rfm9x_check.py from repo
+
+`python3 rfm9x_check.py`
+
+If the RFM9x/RFM69 is detected, the OLED will display Detected!!!
+:crossed_fingers:
+
+
+* You can now press the buttons!!!
+:star_struck:
+
+  
+
+### LoRa part II
+
+    Hardware: SX1262 LoRa HAT Covers 915MHz Frequency Band with Spread Spectrum Modulation
+
+    * https://www.amazon.com/gp/product/B07VS47RQZ/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+
+![](./SX1268_LoRa_HAT.jpeg)
+
+Enable Serial Console (UART) on Raspberry Pi
 
 https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/enabling-serial-console
 

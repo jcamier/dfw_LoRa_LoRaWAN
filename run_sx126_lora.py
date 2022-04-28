@@ -8,7 +8,9 @@
 # wget https://www.waveshare.com/w/upload/9/9d/SX126X_LoRa_HAT_Demo.zip
 # unzip SX126X_LoRa_HAT_Demo.zip
 
-# It was original called main.py, I changed it to run_sx126_lora.py
+# It was original called main.py, I changed it to run_sx126_lora.py, There are a lot of typos...
+# Like I said, I did not write this but provided it for learning purposes
+
 # ------- This is where the original code starts ----
 
 # -*- coding: UTF-8 -*-

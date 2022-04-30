@@ -89,6 +89,14 @@ https://lora-alliance.org/about-lorawan/
 * Transmission from gateway to end device is referred as "downlink"
 
 
+### Device Classes
+* **Class A:** devices sleep most of the time. They listen for downlink messages (from gateway to device) only for a short period after transmitting. If a cloud-hosted application sends a command to this device, a significant delay may take place until the messages is received by the device. Because of that, class A devices are typically battery-powered sensors, having a battery time of up to 10 years.
+  
+
+* **Class B:** devices can receive downlink messages in scheduled downlink slots. These devices are typically battery-powered actuators.
+  
+
+* **Class C:** almost never sleep and continuously listen for the incoming messages. If a cloud-hosted application sends a command to this device, the message will reach the devices with a low delay. Because of that, these devices are typically mains-powered actuators.
 
 
 ## *Project Architecture:*

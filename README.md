@@ -98,12 +98,40 @@ https://lora-alliance.org/about-lorawan/
 
 * **Class C:** almost never sleep and continuously listen for the incoming messages. If a cloud-hosted application sends a command to this device, the message will reach the devices with a low delay. Because of that, these devices are typically mains-powered actuators.
 
-
-## *Project Architecture:*
+## What is LoRaWAN ?
 
 LoRa  & LoRaWAN Topology
 
 ![](./lorwan_topology.png)
+
+
+There are two protocols:
+
+
+
+* **OTAA** Over-The-Air-Activation
+  - The most secure and recommended activation method for end devices. Devices perform a join procedure with the network, during which a dynamic device address is assigned and security keys are negotiated with the device.
+
+
+* **ABP** Activation By Personalization
+  - It requires hardcoding the device address as well as the security keys in the device. ABP is less secure than OTAA and also has the downside that devices can not switch network providers without manually changing keys in the device.
+
+
+### OTAA message flow in LoRaWAN 1.0
+![](./otaa-1.0.png)
+
+Source: https://www.thethingsnetwork.org/docs/lorawan/end-device-activation/
+
+
+		
+AppEUI - 8 bytes
+
+DevEUI - 8 bytes
+
+DevNonce - 2 bytes
+
+## *Project Architecture:*
+
 
     source: https://www.techplayon.com/lora-technology-benefits-application/
 

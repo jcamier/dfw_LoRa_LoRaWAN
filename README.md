@@ -77,6 +77,9 @@ https://lora-alliance.org/about-lorawan/
 ![](./lora_data_specs.png)
   Source: Semtech Corporation 2020
 
+* More details on how it is modulated and encoded: 
+
+https://myriadrf.org/news/lora-modem-limesdr/
 
 * It is low power, long range and low data rate based technology which makes it great for IoT!
 

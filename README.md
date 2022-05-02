@@ -126,12 +126,35 @@ There are two protocols:
 Source: https://www.thethingsnetwork.org/docs/lorawan/end-device-activation/
 
 
-		
 AppEUI - 8 bytes
 
 DevEUI - 8 bytes
 
 DevNonce - 2 bytes
+
+### Adding devices to The Things Network (TTN)
+
+
+1. First create a community account with TTN, it's free
+
+
+2. Go to the Applications section and create some generic name
+   - TTN will let you know if it is already used
+  
+
+3. Click on the `+ Add end device button` to get **DevEUI, AppEUI and AppKey**
+   - You can try to find From The LoRaWAN Device Repository, I did not find raspberry pi in the device repository,
+    here is how you do it manually:
+   - Click on `Manually`
+   - Frequency plan: United States 902-928 MHz, FSB2
+   - LoRaWAN Specifications 1.0.1
+   - DevEUI (click on Generate, let TTN to create this for you)
+   - AppEUI (click fill with zeros)
+   - AppKey (click on Generate, let TTN to create this for you)
+   - End device ID (will be created by TTN, leave blank)
+   - `Register end device`
+  
+![](./the_things_lorawan_manual_end_device.png)
 
 ## *Project Architecture:*
 

@@ -150,6 +150,18 @@ DevNonce - 2 bytes
    - AppKey (click on Generate, let TTN to create this for you)
    - End device ID (will be created by TTN, leave blank)
    - `Register end device`
+    
+
+4. Send an Uplink Payload, special thanks to mobilefish.com - **Robert Lei**:
+    
+    - Inspiration: 
+      
+        https://www.youtube.com/watch?v=k5-1o8WifQM
+    
+    - Use a text to hexadecimal translator:
+
+        https://www.rapidtables.com/convert/number/ascii-to-hex.html
+
   
 ![](./the_things_lorawan_manual_end_device.png)
 

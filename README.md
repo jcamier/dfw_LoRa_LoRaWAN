@@ -200,6 +200,76 @@ https://www.linkedin.com/in/ericlivesay
     
     https://osoyoo.com/2018/07/26/osoyoo-lora-tutorial-how-to-use-the-uart-lora-module-with-arduino/
 
+## Project Setup:
+This board uses the SX1276 chipset, but instead of requiring you to use the SPI bus, they take care of that all for you and you simply need to use uart.write() and uart.read() once you are on the right frequency. It has a set of commands you can give it through the uart bus.
+
+![](ebyte_e32.png))
+
+I wanted to run my experiment of connecting to another Lora module using a Raspberry Pi. However, the Pis are all sold out in most countries! There is a huge backlog. So I settled for a a Pi Pico. The Raspberry Pi Pico is a microcontroller board that has many IO pins and supports the same buses and connections as a Raspberry Pi, except it is only a microcontroller, not a computer. However, it has enough resources to run Micropython, so that is what I used for this: ![](pi_pico.png)
+
+After I got my Pi and my module I connected it up.
+
+Here is the diagram for how to connect it:
+
+![](pico_ebyte_pinout.png)
+
+This is image taken from another similar board, which behaves almost exactly the same which is made by that manufacturer, it just works on a different frequency. Here is the write up on how to connect it: [https://www.iottrends.tech/blog/how-to-interface-lora-sensor-e32-433t20dt-with-pico/](https://www.iottrends.tech/blog/how-to-interface-lora-sensor-e32-433t20dt-with-pico/)
+
+The connection is really simple- Connect the RX on the Uart ports on the Pi Pico to the TX on the E32 board, and vice versa for the TX port (connect to the RX on the e32 board).
+
+Once I had it connected I wanted to try it out. Here is where I realized that I had an issue :) I only had one board! I was thinking that I would try connecting my board to one of Javques Lora modules. However, in reality, when you are testing things out, and its you aren&#39;t close by, that was a silly mistake. So what I did was try to get it to work and then tried to use my RTLSDR32 usb software defined radio dongle and CuvbeSDR software to see if I could pick up the signal. Unfortunately I wasn&#39;t able to find the signal as there is a lot involved in demodulating it and there is a lot of use on the frequency it sends at. By default, this device uses 868 MHz. I tried it on the default frequency first.
+
+Since I had never used a Pi Pico, I tried to use the easiest thing I could to program it and debug it. I found Thonny to be very easy to use to hook up a Pi Pico and put the firmware on it. RTLSDR32 usb software defined radio dongle and CuvbeSDR software to see if I could pick up the signal. Unfortunately I wasn&#39;t able to find the signal as there is a lot involved in demodulating it and there is a lot of use on the frequency it sends at. By default, this device uses 868 MHz. I tried it on the default frequency first.
+
+Since I had never used a Pi Pico, I tried to use the easiest thing I could to program it and debug it. I found Thonny to be very easy to use to hook up a Pi Pico and put the firmware on it.
+
+[https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2)
+
+![](thonny.png)
+
+You plug in the Raspberry PI to your computer via the micro usb cable with Thonny open and you might need to hold down the boot select button on the PI Pico.
+
+Then you are prompted to put the firmware on it and it installs MicroPython. When you save programs, you can choose to save to the Pi Pico.
+
+Here is one of my programs I tested with, that got the device sending (as far as I can tell because I monitored the AUX pin, and that showed the change in values prior to and during transmission (and after) the the manufacturer said indicated sending.
+
+	from machine import UART
+	from machine import Pin, Timer
+	led = Pin(25, Pin.OUT)
+	aux = Pin(22, Pin.IN)
+	m0 = Pin(20, Pin.OUT)
+	m1 = Pin(21, Pin.OUT)
+	import micropython
+	import time
+	import sys
+	micropython.alloc_emergency_exception_buf(100)
+
+	uart = UART(0, 9600) # init with given baudrate
+
+	led.value(1)
+	m0.value(1)
+	m1.value(1)
+
+        def aux_pin_change(p):
+            led.toggle()
+            print(aux.value())
+
+        aux.irq(trigger=Pin.IRQ\_RISING | Pin.IRQ\_FALLING, handler=aux\_pin\_change)
+
+	a = 1
+
+	while a == 1:
+	    print(aux.value())
+	    uart.write(&#39;hello there from eric test\0&#39;)
+	    time.sleep(.04)
+
+The result showed that the AUX pin would change as expected right when I sent the data. My led blinked and the value shown toggled. So I was able to tell with pretty good certainty that it was sending. I have not been able to get the other module to check if I can receive yet. Hopefully in the next week or two.
+
+After realizing that I only had one device, I still wanted to try to communicate with Jacques LoraWan gateway that he had set up. Jacque did some research and found out how he can hook up his gateway to a things network MQTT broker. So he got that hoked up. The next step was for me to add an ESP-01 wifi module onto my device. I was working on making it work but did not have enough time to get it up and running yet. So how it would work would be:
+
+1. A Lora module in the field somewhere would communicate with this other Lora module that also has wifi
+2. The module with wifi would send the message and receive the messages from the MQTT broker
+3. The MQTT broker sends and receives from the gateway
 <hr>
 
 ## Jack Camier 

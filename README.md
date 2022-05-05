@@ -54,7 +54,19 @@ https://lora-alliance.org/about-lorawan/
 
   
 ## What is LoRa?
-* LoRa technology is used as wide area network wireless technology. There are different frequency bands:
+* LoRa technology is used as wide area network wireless technology. 
+
+
+* It is a great technology for IoT devices since its architecture is designed for very little power consumption
+  (some devices last 10 years on a single battery) and for long ranges several miles.
+  
+  - Transmission in general of as far as 15 km (9 mi) with clear line of sight or in urban areas is 2 to 3 km (~1+ mi)
+   
+  - Bluetooth is only good for 30 feet (10 meters) in comparison  
+
+
+
+* There are different frequency bands:
   
     - US: (902 to 928 MHz)
     - EU: (863 to 870 MHz)
@@ -77,10 +89,6 @@ https://lora-alliance.org/about-lorawan/
 ![](./lora_data_specs.png)
   Source: Semtech Corporation 2020
 
-
-* It is low power, long range and low data rate based technology which makes it great for IoT!
-
-  Transmission of as far as 15 km (9 mi) with clear line of sight or in urban areas is 2 to 3 km (~1+ mi) 
 
 
 * The transmission from end device to gateway is referred as "uplink." 
@@ -152,6 +160,7 @@ DevNonce - 2 bytes
    - `Register end device`
     
 
+Not yet completed (to be continued)...    
 4. Send an Uplink Payload, special thanks to mobilefish.com - **Robert Lei**:
     
     - Inspiration: 
@@ -319,6 +328,7 @@ If the RFM9x/RFM69 is detected, the OLED will display Detected!!!
 
 `python3 radio_rfm9x.py`
   
+To be continued...
 
 ### LoRa part II
 

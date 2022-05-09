@@ -15,6 +15,17 @@ https://lora-alliance.org/about-lorawan/
 * **RPi** - shorthand for Raspberry Pi
 
 
+* **GPIO.BCM** Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
+  the Raspberry Pi's Broadcom-chip brain.
+  * If I want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then I would be referring
+    them with the GPIO.BOARD method.
+
+  * But, if I want to refer the pins with the numbers represented in the rectangles around the pins (i.e GPIO 21,
+    GPIO 25, …) then in that case I would be referring to GPIO.BCM method
+
+Example:
+![](./gpio_pins_example.png)  
+
 * **Transceiver** - combination of a transmitter/receiver in a single device. Most
   LoRa end nodes and gateways are transceivers i.e. able to both transmit and receive data
 

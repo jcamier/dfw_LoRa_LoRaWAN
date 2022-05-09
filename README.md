@@ -17,11 +17,11 @@ https://lora-alliance.org/about-lorawan/
 
 * **GPIO.BCM** Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
   the Raspberry Pi's Broadcom-chip brain.
-  * If I want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then I would be referring
+  * If you want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then you would be referring
     them with the GPIO.BOARD method.
 
-  * But, if I want to refer the pins with the numbers represented in the rectangles around the pins (i.e GPIO 21,
-    GPIO 25, …) then in that case I would be referring to GPIO.BCM method
+  * But, if you want to refer the pins with the numbers represented in the rectangles around the pins (i.e GPIO 21,
+    GPIO 25, …) then in that case you would be referring to GPIO.BCM method
 
 Example:
 ![](./gpio_pins_example.png)  

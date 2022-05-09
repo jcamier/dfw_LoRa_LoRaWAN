@@ -459,6 +459,17 @@ https://www.thethingsnetwork.org/
 
 https://github.com/TheThingsNetwork
 
+Notable Python Lora Projects:
+
+https://github.com/chandrawi/LoRaRF-Python
+
+https://github.com/rpsreal/pySX127x
+
+https://github.com/wdomski/LoRa-RaspberryPi
+
+https://gist.github.com/garystafford/bd5e781c8a1097dbac8a447abe18d0cd#file-rasppi_lora_receiver-py
+
+
 What are Hexadecimals (i.e. 0xC0): 
 
 https://en.wikipedia.org/wiki/Hexadecimal

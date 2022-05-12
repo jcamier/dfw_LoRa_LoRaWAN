@@ -9,10 +9,19 @@ https://github.com/Lora-net
 
 https://lora-alliance.org/about-lorawan/
 
-
+* Please not this material is for learning purposes only and no warranty is provided. Some of the code has MIT licensing 
+  which requires disclosure and it's implications
+  
 ## Technical Terms:
 
 * **RPi** - shorthand for Raspberry Pi
+
+
+* **SBC** - Single Board Computer, like a Raspberry Pi
+
+
+* **UART** - is a computer hardware device for asynchronous serial communication in which the data format and
+  transmission speeds are configurable
 
 
 * **GPIO.BCM** Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
@@ -120,6 +129,14 @@ Example:
 
 * **Class C:** almost never sleep and continuously listen for the incoming messages. If a cloud-hosted application sends a command to this device, the message will reach the devices with a low delay. Because of that, these devices are typically mains-powered actuators.
 
+
+### Hardware Specs:
+
+Datasheets  [Semtech SX1276/77/78/79](https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R0000001Rc1/QnUuV9TviODKUgt_rpBlPz.EZA_PNK7Rpi8HA5..Sbo)
+
+Datasheets  [Semtech SX1261/2](https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000Un7F/yT.fKdAr9ZAo3cJLc4F2cBdUsMftpT2vsOICP7NmvMo)
+
+
 ## What is LoRaWAN ?
 
 LoRa  & LoRaWAN Topology
@@ -150,6 +167,10 @@ AppEUI - 8 bytes
 DevEUI - 8 bytes
 
 DevNonce - 2 bytes
+
+### LoRaWAN network layers
+![](./lorawan_network_layers.png)
+source: https://docs.arduino.cc/learn/communication/lorawan-101
 
 ### Adding devices to The Things Network (TTN)
 
@@ -449,6 +470,10 @@ Resources for project:
 
 ## General Resources:
 
+Arduino Guide to LoRa and LoRaWAN
+
+https://docs.arduino.cc/learn/communication/lorawan-101
+
 What is LoRa and LoRaWAN Fundamentals (60+ minutes):
 
 https://www.youtube.com/watch?v=ZsVhYiX4_6o
@@ -468,6 +493,8 @@ https://github.com/rpsreal/pySX127x
 https://github.com/wdomski/LoRa-RaspberryPi
 
 https://gist.github.com/garystafford/bd5e781c8a1097dbac8a447abe18d0cd#file-rasppi_lora_receiver-py
+
+https://github.com/pycom/pycom-libraries/blob/f24b3fbbbfeb3a681cb92e049db9e25db2a6e7c6/examples/lorawan-regional-examples/main_US915.py
 
 
 What are Hexadecimals (i.e. 0xC0): 

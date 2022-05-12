@@ -35,12 +35,15 @@ https://lora-alliance.org/about-lorawan/
   Source: https://learn.adafruit.com/circuitpython-basics-i2c-and-spi/spi-devices?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWIzVniDvAVgEOLEkvDarvc1BUPUY0CubcazydnU9LvjP4zbjciRJyhoCjtkQAvD_BwE
 
 
-* **Hardware Register** are used in the interface between software and peripherals. Software writes them to send
-  information to the device, and reads them to get information from the device. Some hardware devices also include
-  registers that are not visible to software, for their internal use.
+* **Hardware Register** are used in the interface between software and peripherals. Software writes to them to send
+  information to the device, and reads them to get information from the device with hardware-related functions. Some
+  hardware devices also include registers that are not visible to software, for their internal use.
   
   It involves accessing its memory-mapped I/O address or port-mapped I/O address with a "load" or "store" instruction,
   issued by the processor.
+  
+  Looking at the datasheets of a chip, you can assign attributes in a class normally as hexadecimal value and have
+  methods that use these addresses to perform different actions on your end node device.
   
     Source: https://en.wikipedia.org/wiki/Hardware_register
 

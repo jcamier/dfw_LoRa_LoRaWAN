@@ -24,6 +24,27 @@ https://lora-alliance.org/about-lorawan/
   transmission speeds are configurable
 
 
+* **I2C** - Synchronous Multi-controller/Multi-target Serial Communication Bus
+  * The I2C protocol is used to establish communication between two or more IC's (Integrated Circuits)
+
+
+* **SPI** - Serial Peripheral Interface
+  * is a synchronous serial communication or protocol normally found on RPi for two devices to send and receive data
+  * I2C on the other hand share a single data wire
+  
+  Source: https://learn.adafruit.com/circuitpython-basics-i2c-and-spi/spi-devices?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWIzVniDvAVgEOLEkvDarvc1BUPUY0CubcazydnU9LvjP4zbjciRJyhoCjtkQAvD_BwE
+
+
+* **Hardware Register** are used in the interface between software and peripherals. Software writes them to send
+  information to the device, and reads them to get information from the device. Some hardware devices also include
+  registers that are not visible to software, for their internal use.
+  
+  It involves accessing its memory-mapped I/O address or port-mapped I/O address with a "load" or "store" instruction,
+  issued by the processor.
+  
+    Source: https://en.wikipedia.org/wiki/Hardware_register
+
+
 * **GPIO.BCM** Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
   the Raspberry Pi's Broadcom-chip brain.
   * If you want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then you would be referring
@@ -53,18 +74,7 @@ Example:
 
 
   Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
-
-
-* **I2C** - Synchronous Multi-controller/Multi-target Serial Communication Bus
-  * The I2C protocol is used to establish communication between two or more IC's (Integrated Circuits)
-
-
-* **SPI** - Serial Peripheral Interface
-  * is a synchronous serial communication or protocol normally found on RPi for two devices to send and receive data
-  * I2C on the other hand share a single data wire
-  
-  Source: https://learn.adafruit.com/circuitpython-basics-i2c-and-spi/spi-devices?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWIzVniDvAVgEOLEkvDarvc1BUPUY0CubcazydnU9LvjP4zbjciRJyhoCjtkQAvD_BwE
-    
+ 
     
 * The **baud rate** is the rate at which information is transferred in a communication channel. It is commonly used
   when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the

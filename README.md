@@ -182,6 +182,9 @@ DevNonce - 2 bytes
 ![](./lorawan_network_layers.png)
 source: https://docs.arduino.cc/learn/communication/lorawan-101
 
+### Finding a LoRaWAN Gateway near you:
+https://www.thethingsnetwork.org/map
+
 ### Adding devices to The Things Network (TTN)
 
 

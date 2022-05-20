@@ -56,6 +56,12 @@ https://lora-alliance.org/about-lorawan/
   * But, if you want to refer the pins with the numbers represented in the rectangles around the pins (i.e GPIO 21,
     GPIO 25, …) then in that case you would be referring to GPIO.BCM method
 
+
+* **CRC** Cyclic redundancy check. Is an error-detecting code commonly used in digital networks and storage devices. 
+  Often you will see this in LoRa code to ensure the data was transmitted properly as data loss is not uncommon.
+  
+  Source: https://en.wikipedia.org/wiki/Cyclic_redundancy_check   
+
 Example:
 ![](./gpio_pins_example.png)  
 

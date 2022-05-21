@@ -214,7 +214,7 @@ https://www.thethingsnetwork.org/map
    - `Register end device`
     
 
-Not yet completed (to be continued)...    
+Not yet completed (4)...to be updated
 4. Send an Uplink Payload, special thanks to mobilefish.com - **Robert Lei**:
     
     - Inspiration: 
@@ -351,7 +351,7 @@ SPI ok!
 done!
 ```
 
-Next section...getting the Adafruit LoRa Radio Bonnet to work with RPi
+### Getting the Adafruit LoRa Radio Bonnet to work with RPi
 
 Source: https://learn.adafruit.com/lora-and-lorawan-radio-for-raspberry-pi?view=all
 
@@ -377,13 +377,27 @@ If the RFM9x/RFM69 is detected, the OLED will display Detected!!!
 * You can now press the buttons!!!
 :star_struck:
 
+### Have Two Adafruit LoRa Radio Bonnets talk to each other with RPi - (This requires 2 Adafruit bonnets and RPis!!!)
+
 `sudo nano radio_rfm9x.py`
 * copy over file radio_rfm9x.py from repo
 
 `python3 radio_rfm9x.py`
   
-To be continued...
+* You can now press the buttons on one LoRa device and the second one will display which one was pressed
 
+### Have One Adafruit LoRa Radio Bonnets send Hello World to the other one - (This requires 2 Adafruit bonnets and RPis)
+
+`sudo nano rfm9x_rpi_simpletest.py`
+* copy over file rfm9x_rpi_simpletest.py from repo
+
+Run `python3 rfm9x_rpi_simpletest.py` on each of the RPis at the same time. One of them will send Hello World to the 
+other using LoRa!
+
+* more cool samples scripts can be found at:
+https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/tree/main/examples
+
+(To be continued...not yet completed...)
 ### LoRa part II
 
     Hardware: SX1262 LoRa HAT Covers 915MHz Frequency Band with Spread Spectrum Modulation

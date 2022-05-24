@@ -1,11 +1,11 @@
 # DFW Pythoneers Talk on LoRa & LoRaWAN
-![](./lora_logo.png) 
+![](images/lora_logo.png) 
 
 GitHub LoRa repo:
 
 https://github.com/Lora-net
 
-![](./lorawan_logo.png)  
+![](images/lorawan_logo.png)  
 
 https://lora-alliance.org/about-lorawan/
 
@@ -93,7 +93,7 @@ Example:
     * Frequency Shift Keying (FSK)
     * Phase Shift Keying (PSK)
       
-![](./digital_modulation.png)  
+![](images/digital_modulation.png)  
 
 
   Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
@@ -139,7 +139,7 @@ Example:
   
 
 * Spreading Factors and Frequencies
-![](./lora_data_specs.png)
+![](images/lora_data_specs.png)
   Source: Semtech Corporation 2020
 
 * More details on how it is modulated and encoded: 
@@ -174,7 +174,7 @@ Datasheets  [Semtech SX1261/2](https://semtech.my.salesforce.com/sfc/p/#E0000000
 
 LoRa  & LoRaWAN Topology
 
-![](./lorwan_topology.png)
+![](images/lorwan_topology.png)
 
 
 There are two protocols:
@@ -190,7 +190,7 @@ There are two protocols:
 
 
 ### OTAA message flow in LoRaWAN 1.0
-![](./otaa-1.0.png)
+![](images/otaa-1.0.png)
 
 Source: https://www.thethingsnetwork.org/docs/lorawan/end-device-activation/
 
@@ -202,7 +202,7 @@ DevEUI - 8 bytes
 DevNonce - 2 bytes
 
 ### LoRaWAN network layers
-![](./lorawan_network_layers.png)
+![](images/lorawan_network_layers.png)
 source: https://docs.arduino.cc/learn/communication/lorawan-101
 
 ### Finding a LoRaWAN Gateway near you:
@@ -245,7 +245,7 @@ Not yet completed (4)...to be updated
         https://www.rapidtables.com/convert/number/ascii-to-hex.html
 
   
-![](./the_things_lorawan_manual_end_device.png)
+![](images/the_things_lorawan_manual_end_device.png)
 
 ## *Project Architecture:*
 
@@ -355,7 +355,7 @@ https://www.linkedin.com/in/jacques-camier/
 
     * https://www.adafruit.com/product/4074
 
-![](./adafruit_lora_rfm95w_bonnet.jpeg)
+![](images/adafruit_lora_rfm95w_bonnet.jpeg)
 
 1. Configure I2C
   
@@ -493,7 +493,7 @@ https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/tree/main/examples
 
     * https://www.amazon.com/gp/product/B07VS47RQZ/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
 
-![](./SX1268_LoRa_HAT.jpeg)
+![](images/SX1268_LoRa_HAT.jpeg)
 
 Enable Serial Console (UART) on Raspberry Pi
 

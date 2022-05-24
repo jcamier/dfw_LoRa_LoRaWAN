@@ -62,6 +62,8 @@ https://lora-alliance.org/about-lorawan/
   - Black hole collision at 526 dBm (3.6 x 10<sup>49</sup> W) :face_with_spiral_eyes:
   - 27 dBm (500 mW) Cellular phone transmission power
   - 20 dBm (100 mW) Adafruit LoRa devices  
+    
+  Source: https://en.wikipedia.org/wiki/DBm
   
 
 * **CRC** - Cyclic redundancy check. Is an error-detecting code commonly used in digital networks and storage devices. 

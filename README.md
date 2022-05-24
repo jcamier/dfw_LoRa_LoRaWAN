@@ -62,6 +62,11 @@ https://lora-alliance.org/about-lorawan/
   
   Source: https://en.wikipedia.org/wiki/Cyclic_redundancy_check   
 
+
+* **RSSI** Received Signal Strength Indicator
+
+  Source: https://www.metageek.com/training/resources/understanding-rssi/  
+
 Example:
 ![](./gpio_pins_example.png)  
 
@@ -222,7 +227,9 @@ Not yet completed (4)...to be updated
     
     - Inspiration: 
       
-        https://www.youtube.com/watch?v=k5-1o8WifQM
+        - https://www.youtube.com/watch?v=k5-1o8WifQM
+      
+        - https://www.mobilefish.com/download/lora/lora_part58.pdf
     
     - Use a text to hexadecimal translator:
 

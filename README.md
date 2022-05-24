@@ -57,7 +57,7 @@ https://lora-alliance.org/about-lorawan/
     GPIO 25, …) then in that case you would be referring to GPIO.BCM method
 
 
-* dBm - Decibel milliwatts. It is a unit of level used to indicate a power level expressed in decibels. It is used in
+* **dBm** - Decibel milliwatts. It is a unit of level used to indicate a power level expressed in decibels. It is used in
   radio, microwave, fiber-optic communication, etc as a convenient method of absolute power. 
   - Black hole collision at 526 dBm (3.6 x 10<sup>49</sup> W) :face_with_spiral_eyes:
   - 27 dBm (500 mW) Cellular phone transmission power
@@ -77,7 +77,7 @@ https://lora-alliance.org/about-lorawan/
   Source: https://www.metageek.com/training/resources/understanding-rssi/  
 
 Example:
-![](./gpio_pins_example.png)  
+![](images/gpio_pins_example.png)  
 
 * **Transceiver** - combination of a transmitter/receiver in a single device. Most
   LoRa end nodes and gateways are transceivers i.e. able to both transmit and receive data

@@ -20,7 +20,7 @@ https://lora-alliance.org/about-lorawan/
 * **SBC** - Single Board Computer, like a Raspberry Pi
 
 
-* **UART** - is a computer hardware device for asynchronous serial communication in which the data format and
+* **UART** - Computer hardware device for asynchronous serial communication in which the data format and
   transmission speeds are configurable
 
 
@@ -48,7 +48,7 @@ https://lora-alliance.org/about-lorawan/
     Source: https://en.wikipedia.org/wiki/Hardware_register
 
 
-* **GPIO.BCM** Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
+* **GPIO.BCM** - Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
   the Raspberry Pi's Broadcom-chip brain.
   * If you want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then you would be referring
     them with the GPIO.BOARD method.
@@ -57,13 +57,22 @@ https://lora-alliance.org/about-lorawan/
     GPIO 25, …) then in that case you would be referring to GPIO.BCM method
 
 
-* **CRC** Cyclic redundancy check. Is an error-detecting code commonly used in digital networks and storage devices. 
+* dBm - Decibel milliwatts. It is a unit of level used to indicate a power level expressed in decibels. It is used in
+  radio, microwave, fiber-optic communication, etc as a convenient method of absolute power. 
+  - Black hole collision at 526 dBm (3.6 x 10<sup>49</sup> W) :face_with_spiral_eyes:
+  - 27 dBm (500 mW) Cellular phone transmission power
+  - 20 dBm (100 mW) Adafruit LoRa devices  
+    
+  Source: https://en.wikipedia.org/wiki/DBm
+  
+
+* **CRC** - Cyclic redundancy check. Is an error-detecting code commonly used in digital networks and storage devices. 
   Often you will see this in LoRa code to ensure the data was transmitted properly as data loss is not uncommon.
   
   Source: https://en.wikipedia.org/wiki/Cyclic_redundancy_check   
 
 
-* **RSSI** Received Signal Strength Indicator
+* **RSSI** - Received Signal Strength Indicator
 
   Source: https://www.metageek.com/training/resources/understanding-rssi/  
 

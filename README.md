@@ -226,21 +226,7 @@ https://www.thethingsnetwork.org/map
    - AppKey (click on Generate, let TTN to create this for you)
    - End device ID (will be created by TTN, leave blank)
    - `Register end device`
-    
-
-Not yet completed (4)...to be updated
-4. Send an Uplink Payload, special thanks to mobilefish.com - **Robert Lei**:
-    
-    - Inspiration: 
-      
-        - https://www.youtube.com/watch?v=k5-1o8WifQM
-      
-        - https://www.mobilefish.com/download/lora/lora_part58.pdf
-    
-    - Use a text to hexadecimal translator:
-
-        https://www.rapidtables.com/convert/number/ascii-to-hex.html
-
+  
   
 ![](images/the_things_lorawan_manual_end_device.png)
 
@@ -412,6 +398,30 @@ other using LoRa!
 
 * more cool samples scripts can be found at:
 https://github.com/adafruit/Adafruit_CircuitPython_RFM9x/tree/main/examples
+
+### Send Downlink Payload to LoRaWAN using MQTT, special thanks to mobilefish.com - **Robert Lei**:
+    
+* Inspiration: 
+      
+    - https://www.youtube.com/watch?v=k5-1o8WifQM
+      
+    - https://www.mobilefish.com/download/lora/lora_part58.pdf
+    
+* Python version 3.7.3, paho-mqtt==1.6.1
+
+`sudo nano send_downlink_mqtt_lorawan.py`
+* copy over file send_downlink_mqtt_lorawan.py from repo
+
+* update file with your LoRaWAN credentials, instructions above
+
+`python3 send_downlink_mqtt_lorawan.py`
+
+* you should see your payload in Applications for your device in Live Data
+
+    - Use a text to hexadecimal translator (code already does this for you):
+
+        https://www.rapidtables.com/convert/number/ascii-to-hex.html
+
 
 (To be continued...not yet completed...)
 ### LoRa part II

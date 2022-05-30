@@ -76,6 +76,29 @@ https://lora-alliance.org/about-lorawan/
 
   Source: https://www.metageek.com/training/resources/understanding-rssi/  
 
+
+* **PA** - Power Amplifier
+  In the RF signal chain, the power amplifier (PA) is the active element located between the transmitter signal chain
+  circuitry and the antenna. It is often a single discrete component, one with requirements and parameters which differ
+  from those of much of the transmit chain as well as the receiver circuitry.
+  
+  Source: https://www.analogictips.com/rf-power-amplifier-part-1-functions-faq/
+
+
+* **MSB** - Most Significant Byte; it is the bit in a multiple-bit binary number with the largest value
+
+
+* **LSB** - Least Significant Byte
+
+
+* **SNR** - Signal-to-Noise Ratio; is the ratio between the received power signal and the noise floor power level. 
+  The noise floor is an area of all unwanted interfering signal sources which can corrupt the transmitted signal and
+  therefore re-transmissions will occur.
+  - If SNR is greater than 0, the received signal operates above the noise floor.
+  - If SNR is smaller than 0, the received signal operates below the noise floor.
+
+  Source: https://lora.readthedocs.io/en/latest/#:~:text=Signal%2Dto%2DNoise%20Ratio%20(,therefore%20re%2Dtransmissions%20will%20occur.
+
 Example:
 ![](images/gpio_pins_example.png)  
 

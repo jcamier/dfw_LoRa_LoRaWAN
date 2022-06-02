@@ -154,6 +154,8 @@ Example:
     - Other Asian countries: (920 to 923 MHz or 923 to 925 MHz)
   
     Source: https://devopedia.org/lora
+  
+    Resource: https://www.thethingsnetwork.org/docs/lorawan/frequencies-by-country/
 
 
 * LoRa is based on Chirp Spread Spectrum (CSS) technology, where chirps (also known as symbols) are the carrier of data.

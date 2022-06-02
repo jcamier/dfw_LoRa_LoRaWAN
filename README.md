@@ -51,10 +51,14 @@ https://lora-alliance.org/about-lorawan/
 * **GPIO.BCM** - Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
   the Raspberry Pi's Broadcom-chip brain.
   * If you want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then you would be referring
-    them with the GPIO.BOARD method.
+    them with the GPIO.BOARD method. These correlate to the GPIO Headers on the Board.
 
   * But, if you want to refer the pins with the numbers represented in the rectangles around the pins (i.e GPIO 21,
     GPIO 25, …) then in that case you would be referring to GPIO.BCM method
+    
+
+Example:
+![](images/gpio_pins_and_headers.png)  
 
 
 * **dBm** - Decibel milliwatts. It is a unit of level used to indicate a power level expressed in decibels. It is used in
@@ -99,8 +103,6 @@ https://lora-alliance.org/about-lorawan/
 
   Source: https://lora.readthedocs.io/en/latest/#:~:text=Signal%2Dto%2DNoise%20Ratio%20(,therefore%20re%2Dtransmissions%20will%20occur.
 
-Example:
-![](images/gpio_pins_example.png)  
 
 * **Transceiver** - combination of a transmitter/receiver in a single device. Most
   LoRa end nodes and gateways are transceivers i.e. able to both transmit and receive data

@@ -20,6 +20,21 @@ https://lora-alliance.org/about-lorawan/
 * **SBC** - Single Board Computer, like a Raspberry Pi
 
 
+* **Serial Communication** - The process of sending data one bit at a time, sequentially, over a
+  communication channel or computer bus.
+  
+  
+![](images/serial_communication.png)
+
+  Source: https://en.wikipedia.org/wiki/Serial_communication
+
+
+* **MSB** - Most Significant Byte; it is the bit in a multiple-bit binary number with the largest value
+
+
+* **LSB** - Least Significant Byte
+
+
 * **UART** - Computer hardware device for asynchronous serial communication in which the data format and
   transmission speeds are configurable
 
@@ -34,6 +49,11 @@ https://lora-alliance.org/about-lorawan/
   
   Source: https://learn.adafruit.com/circuitpython-basics-i2c-and-spi/spi-devices?gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWIzVniDvAVgEOLEkvDarvc1BUPUY0CubcazydnU9LvjP4zbjciRJyhoCjtkQAvD_BwE
 
+
+* **Baud rate** is the rate at which information is transferred in a communication channel. It is commonly used
+  when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the
+  serial port is capable of transferring a maximum of *9600 bits per second*.
+  
 
 * **Hardware Register** are used in the interface between software and peripherals. Software writes to them to send
   information to the device, and reads them to get information from the device with hardware-related functions. Some
@@ -89,12 +109,6 @@ Example:
   Source: https://www.analogictips.com/rf-power-amplifier-part-1-functions-faq/
 
 
-* **MSB** - Most Significant Byte; it is the bit in a multiple-bit binary number with the largest value
-
-
-* **LSB** - Least Significant Byte
-
-
 * **SNR** - Signal-to-Noise Ratio; is the ratio between the received power signal and the noise floor power level. 
   The noise floor is an area of all unwanted interfering signal sources which can corrupt the transmitted signal and
   therefore re-transmissions will occur.
@@ -108,6 +122,7 @@ Example:
   LoRa end nodes and gateways are transceivers i.e. able to both transmit and receive data
 
 
+  
 * **Modulation** - how analog or digital information is encoded onto a carrier signal
   * Analog:  
     * Amplitude Modulation (AM)
@@ -122,13 +137,6 @@ Example:
 
 
   Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_I_-_Radio_Systems_(Steer)/02%3A_Modulation/2.05%3A_Digital_Modulation
- 
-    
-* The **baud rate** is the rate at which information is transferred in a communication channel. It is commonly used
-  when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the
-  serial port is capable of transferring a maximum of *9600 bits per second*.
-  
-  
 
   
 ## What is LoRa?

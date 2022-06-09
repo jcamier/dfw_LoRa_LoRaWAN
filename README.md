@@ -294,7 +294,7 @@ https://www.linkedin.com/in/ericlivesay
 ## Project Setup:
 This board uses the SX1276 chipset, but instead of requiring you to use the SPI bus, they take care of that all for you and you simply need to use uart.write() and uart.read() once you are on the right frequency. It has a set of commands you can give it through the uart bus.
 
-![](ebyte_e32.png))
+![](images/ebyte_e32.png))
 
 I wanted to run my experiment of connecting to another Lora module using a Raspberry Pi. However, the Pis are all sold out in most countries! There is a huge backlog. So I settled for a a Pi Pico. The Raspberry Pi Pico is a microcontroller board that has many IO pins and supports the same buses and connections as a Raspberry Pi, except it is only a microcontroller, not a computer. However, it has enough resources to run Micropython, so that is what I used for this: ![](pi_pico.png)
 
@@ -302,7 +302,7 @@ After I got my Pi and my module I connected it up.
 
 Here is the diagram for how to connect it:
 
-![](pico_ebyte_pinout.png)
+![](images/pico_ebyte_pinout.png)
 
 This is image taken from another similar board, which behaves almost exactly the same which is made by that manufacturer, it just works on a different frequency. Here is the write up on how to connect it: [https://www.iottrends.tech/blog/how-to-interface-lora-sensor-e32-433t20dt-with-pico/](https://www.iottrends.tech/blog/how-to-interface-lora-sensor-e32-433t20dt-with-pico/)
 
@@ -316,7 +316,7 @@ Since I had never used a Pi Pico, I tried to use the easiest thing I could to pr
 
 [https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2)
 
-![](thonny.png)
+![](images/thonny.png)
 
 You plug in the Raspberry PI to your computer via the micro usb cable with Thonny open and you might need to hold down the boot select button on the PI Pico.
 

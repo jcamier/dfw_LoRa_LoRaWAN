@@ -259,6 +259,8 @@ https://www.thethingsnetwork.org/map
    - Click on `Manually`
    - Frequency plan: United States 902-928 MHz, FSB2
    - LoRaWAN Specifications 1.0.1
+   - Click `Show advanced activation` if you want to change activation mode to **ABP**, otherwise it will 
+     default to OTAA (recommended)  
    - DevEUI (click on Generate, let TTN to create this for you)
    - AppEUI (click fill with zeros)
    - AppKey (click on Generate, let TTN to create this for you)

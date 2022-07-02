@@ -29,12 +29,6 @@ https://lora-alliance.org/about-lorawan/
   Source: https://en.wikipedia.org/wiki/Serial_communication
 
 
-* **MSB** - Most Significant Byte; it is the bit in a multiple-bit binary number with the largest value
-
-
-* **LSB** - Least Significant Byte
-
-
 * **UART** - Computer hardware device for asynchronous serial communication in which the data format and
   transmission speeds are configurable
 
@@ -76,6 +70,12 @@ https://lora-alliance.org/about-lorawan/
     - LE format: 321 - x86 architectures use little endian when storing data
   
     Source: https://en.wikipedia.org/wiki/Endianness
+  
+
+* **MSB** - Most Significant Byte; it is the bit in a multiple-bit binary number with the largest value
+
+
+* **LSB** - Least Significant Byte
 
 
 * **GPIO.BCM** - Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by

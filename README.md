@@ -68,6 +68,16 @@ https://lora-alliance.org/about-lorawan/
     Source: https://en.wikipedia.org/wiki/Hardware_register
 
 
+* **Endianness** - Is the order or sequence of bytes of a word/number of digital data in computer memory. We commonly write
+  in big-endian (BE), however the RPi and Arduino use little-endian (LE) - reverse order. This is important to know when
+  dealing with byte manipulation through pointer casting or bitfields
+  * Example the number: One hundred twenty-three
+    - BE format: 123
+    - LE format: 321 - x86 architectures use little endian when storing data
+  
+    Source: https://en.wikipedia.org/wiki/Endianness
+
+
 * **GPIO.BCM** - Broadcom chip-specific pin numbers. These pin numbers follow the lower-level numbering system defined by
   the Raspberry Pi's Broadcom-chip brain.
   * If you want to refer to the pins with the numbers represented in circles (i.e 1, 2, 3, …) then you would be referring
